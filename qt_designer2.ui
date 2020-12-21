@@ -10,6 +10,12 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Montserrat Subrayada</family>
+    <pointsize>25</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -125,6 +131,11 @@ QPushButton
     padding: 3px;
     font-size: 12px;
     padding-left: 5px;
+	
+	
+	
+	
+	font: 20pt &quot;Montserrat&quot;;
     padding-right: 5px;
     min-width: 40px;
 }
@@ -546,22 +557,11 @@ QAbstractSpinBox {
       <height>121</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Century</family>
-      <pointsize>-1</pointsize>
-      <weight>75</weight>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="whatsThis">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-
-</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Show Graph</string>
@@ -576,8 +576,8 @@ QAbstractSpinBox {
    <widget class="MplWidget" name="MplWidget" native="true">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>140</y>
+      <x>330</x>
+      <y>120</y>
       <width>411</width>
       <height>431</height>
      </rect>
