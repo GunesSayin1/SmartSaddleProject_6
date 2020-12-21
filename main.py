@@ -13,19 +13,18 @@ import pyqtgraph as pg
 
 pg.setConfigOption('background', 'w')
 pg.setConfigOption('foreground', 'k')
-class MatplotlibWidget(QMainWindow):
+
+
+
+class GraphWidget(QMainWindow):
 
     def __init__(self):
         QMainWindow.__init__(self)
 
         loadUi("qt_designer2.ui", self)
 
-        self.setWindowTitle("PyQt5 & Matplotlib Example GUI")
-
+        self.setWindowTitle("Smart Saddle")
         self.pushButton.clicked.connect(self.update_graph)
-
-
-
         self.addToolBar(NavigationToolbar(self.MplWidget.canvas, self))
 
 
@@ -51,7 +50,7 @@ class MatplotlibWidget(QMainWindow):
         c2 = plt.plot(x, y2, pen='r', name='yChange')
 
 app = QApplication([])
-window = MatplotlibWidget()
+window = GraphWidget()
 window.show()
 app.exec_()
 
