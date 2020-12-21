@@ -25,7 +25,6 @@ class GraphWidget(QMainWindow):
 
         self.setWindowTitle("Smart Saddle")
         self.pushButton.clicked.connect(self.update_graph)
-        self.addToolBar(NavigationToolbar(self.MplWidget.canvas, self))
 
 
     def update_graph(self):
