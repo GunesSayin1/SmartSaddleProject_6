@@ -22,7 +22,7 @@ class MatplotlibWidget(QMainWindow):
 
         self.setWindowTitle("PyQt5 & Matplotlib Example GUI")
 
-        self.pushButton_generate_random_signal.clicked.connect(self.update_graph)
+        self.pushButton.clicked.connect(self.update_graph)
 
 
 
