@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1172</width>
+    <height>802</height>
    </rect>
   </property>
   <property name="font">
@@ -552,9 +552,57 @@ QAbstractSpinBox {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
-      <width>261</width>
-      <height>121</height>
+      <y>0</y>
+      <width>241</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Open File</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="PlotWidget" name="graphWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>561</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>550</y>
+      <width>551</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>0</y>
+      <width>241</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="whatsThis">
@@ -573,17 +621,22 @@ QAbstractSpinBox {
      </size>
     </property>
    </widget>
-   <widget class="MplWidget" name="MplWidget" native="true">
+   <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>120</y>
-      <width>411</width>
-      <height>431</height>
+      <x>620</x>
+      <y>150</y>
+      <width>511</width>
+      <height>381</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true"/>
+    <property name="font">
+     <font>
+      <family>Montserrat Black</family>
+      <pointsize>34</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
   </widget>
@@ -592,7 +645,7 @@ QAbstractSpinBox {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1172</width>
      <height>21</height>
     </rect>
    </property>
@@ -620,9 +673,9 @@ QAbstractSpinBox {
  </widget>
  <customwidgets>
   <customwidget>
-   <class>MplWidget</class>
+   <class>PlotWidget</class>
    <extends>QWidget</extends>
-   <header>mplwidget.h</header>
+   <header>pyqtgraph</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
